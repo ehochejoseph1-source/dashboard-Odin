@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: minmax(160px, 25vh) minmax(4px , 70vh);
+    background-color: rgb(255, 255, 255);
+    gap: 20px;
+}
+.sidebar {
+    grid-row: 1 /3 ;
+    background-color: aquamarine;
+}
+header {
+    background-color: aqua;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.7fr 1fr;
+}
+main {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.project {
+    grid-row: 1 /3;
+}
