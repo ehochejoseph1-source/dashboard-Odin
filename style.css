@@ -3,6 +3,7 @@
 }
 a {
     text-decoration: none;
+    color: #FFFFFF;
 }
 body {
     margin: 0%;
@@ -14,17 +15,18 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: minmax(160px, max-content) minmax(4px , 70vh);
+    grid-template-rows: minmax(160px, max-content) max-content;
     background-color: rgb(255, 255, 255);
-    gap: 20px;
+    height: 900px;
 }
 .sidebar {
     grid-row: 1 /3 ;
-    background-color: aquamarine;
+    background-color: rgb(44, 137, 212);
     display: grid;
     grid-template-rows: max-content minmax(max-content , 10vh) max-content;
     grid-auto-rows: repeat(autofill, minmax(100px , 400px)) ;
     gap: 1vh;
+    color: #FFFFFF;
 }
 .sidebar ul {
     display: flexbox;
@@ -40,7 +42,7 @@ body {
     list-style-position: inside;
 }
 header {
-    background-color: aqua;
+    background-color: white;
     grid-column: 2;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -83,6 +85,7 @@ header .button {
     display: grid;
     grid-template-columns:  repeat(auto-fit, minmax(80px , 90px));
     gap: 5px;
+    align-items: center;
     
 }
 header .button button{
@@ -97,11 +100,70 @@ header .button button{
 header .button button:hover {
      background-color: rgb(29, 89, 138);
 }
-main {
-    background-color: aquamarine;
+.main {
+    background-color: rgb(222, 233, 232);
     display: grid;
+    gap: 15px;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1.8fr;
+    padding: 20px;
+}
+.project {
+    padding-left: 20px;
+}
+.projects {
+  background-color:  rgb(222, 233, 232);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px , 0.3fr));
+  gap: 15px;
+}
+
+.projects p , .annoucements p, .trending p  {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+ .card {
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+.annans {
+    display: grid;
+    grid-template-rows: 40px 190px;
+    grid-template-columns: 200px;
+    padding: 0%;
+    margin: 0%;
+    }
+.trends {
+    display: grid;
+    grid-template-rows: 40px 200px;
+    grid-template-columns: 200px;
+    background-color:  rgb(222, 233, 232);
+    padding: 0%;
+    margin: 0%;
+    grid-auto-rows: 20px ;
+    height:200px;
+    }
+.trends .card {
+    height: 3000px;
+}
+.cardi {
+    background-color: #FFFFFF;
+    padding: 10px;
 }
 .project {
     grid-row: 1 /3;
